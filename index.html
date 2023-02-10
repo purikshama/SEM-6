@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+        <!-- Element for making page responsive 📲-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- favicn 🌍-->
+        <link rel="apple-touch-icon" sizes="180x180" href="icon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="icon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="icon/favicon-16x16.png">
+        <link rel="manifest" href="icon/site.webmanifest">
+        <meta name="msapplication-TileColor" content="#da532c">
+        <meta name="theme-color" content="#000">
+
+        <!-- Title of the Page 🖼️-->
+        <title>Time-Table</title>
+
+        <!-- Css Stylesheet 🎨-->
+        <link rel="stylesheet" href="style.css">
+
+        <!-- In-page Css 🎨-->
+        <style>
+            .free{
+                background-color: green;
+            }
+            .black{
+                background-color: black;
+                color: white;
+            }
+        </style>
+
+    </head>
+    <body>
+        <div class="container" id="container">
+            <div class="top" id="top">
+
+                <div class="sub-top-a" id="sub-top-a">
+                    <div><b>Time Table</b></div>
+                </div>
+
+                <div class="sub-top-b">
+                    <div>
+                        <label for="check">
+                            <div class="btn" id="btn" onclick="menu()">
+                                <div class="bar1"></div>
+                                <div class="bar2"></div>
+                                <div class="bar3"></div>
+                            </div>
+                        </label>
+                    </div>
+                </div>
+
+            </div>
+
+            <input type="checkbox" class="check" name="check" id="check" style="display: none;">
+            
+            <div class="nav" id="nav">
+                <a href="AP.html">
+                    <div>Android Programing</div>
+                </a>
+                <a href="AP-L.html">
+                    <div>Android Programing (lab)</div>
+                </a>
+                <a href="IS.html">
+                    <div>Information Security</div>
+                </a>
+                <a href="IS-L.html">
+                    <div>Information Security (lab)</div>
+                </a>
+                <a href="DM.html">
+                    <div>Digital Marketing</div>
+                </a>
+                <a href="DM-L.html">
+                    <div>Digital Marketing (lab)</div>
+                </a>
+                <a href="CLIPR.html">
+                    <div>Cyber Law & IPR</div>
+                </a>
+                <a href="CLIPR-L.html">
+                    <div>Cyber Law & IPR (lab)</div>
+                </a>
+            </div>
+
+            <div class="body" id="body">
+                <div class="sub-body" id="sub-body">
+                    <table style="height: 70%;">
+
+                        <tr>
+                            <td style="border: none;"></td>
+                            <td class="black">Mon</td>
+                            <td class="black">Tue</td>
+                            <td class="black">Wed</td>
+                            <td class="black">Thr</td>
+                            <td class="black">Fri</td>
+                        </tr>
+                        
+                        <tr>
+                            <td class="black">8:30</td>
+                            <td>IS</td>
+                            <td>DM</td>
+                            <td class="free"></td>
+                            <td rowspan="2">DM<br>(lab)</td>
+                            <td>IS</td>
+                        </tr>
+                        
+                        <tr>
+                            <td class="black">9:30</td>
+                            <td>DM</td>
+                            <td>AP</td>
+                            <td>CLIPR</td>
+                            <td>DM</td>
+                        </tr>
+                        
+                        <tr>
+                            <td class="black">10:30</td>
+                            <td>AP</td>
+                            <td rowspan="2">AP<br>(lab)</td>
+                            <td rowspan="2">CLIPR<br>(lab)</td>
+                            <td>IS</td>
+                            <td>AP</td>
+                        </tr>
+                        
+                        <tr>
+                            <td class="black">11:30</td>
+                            <td class="free"></td>
+                            <td class="free"></td>
+                            <td class="free"></td>
+                        </tr>
+                        
+                        <tr>
+                            <td class="black">12:30</td>
+                            <td class="free"></td>
+                            <td class="free"></td>
+                            <td class="free"></td>
+                            <td class="free"></td>
+                            <td>CLIPR</td>
+                        </tr>
+                        
+                        <tr>
+                            <td class="black">1:30</td>
+                            <td rowspan="2">MP<br>(lab)</td>
+                            <td>CLIPR</td>
+                            <td class="free"></td>
+                            <td>IS</td>
+                            <td>CLIPR</td>
+                        </tr>
+                        
+                        <tr>
+                            <td class="black">2:30</td>
+                            <td>DM</td>
+                            <td rowspan="2">MP<br>(lab)</td>
+                            <td rowspan="2">CLIPR<br>(lab)</td>
+                            <td rowspan="2">DM<br>(lab)</td>
+                        </tr>
+                        
+                        <tr>
+                            <td class="black">3:30</td>
+                            <td class="free"></td>
+                            <td>MC</td>
+                        </tr>
+
+                    </table>
+                </div>
+            </div>
+        </div>
+        
+        <script>
+            function menu(){
+                document.getElementById('btn').classList.toggle("change");
+            }
+        </script>
+    
+    </body>
+</html>

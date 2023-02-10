@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sem-6 IS-L</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .serial{
+            background-color: black;
+            color: white;
+            text-align: center;
+        }
+        td{
+            padding: 2px;
+        }
+        table{
+            text-align: left;
+        }
+    </style>
+    <!-- favicn -->
+    <link rel="apple-touch-icon" sizes="180x180" href="icon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="icon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="icon/favicon-16x16.png">
+    <link rel="manifest" href="icon/site.webmanifest">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#000">
+</head>
+<body>
+    <div class="container" id="container">
+        <div class="top" id="top">
+            <div class="sub-top-a" id="sub-top-a">
+                <div>Information Security (lab)</div>
+            </div>
+            <div class="sub-top-b">
+                <div>
+                    <label for="check">
+                        <div class="btn" id="btn" onclick="menu()">
+                            <div class="bar1"></div>
+                            <div class="bar2"></div>
+                            <div class="bar3"></div>
+                        </div>
+                    </label>
+                </div>
+            </div>
+        </div>
+        <input type="checkbox" class="check" name="check" id="check" style="display: none;">
+        <div class="nav" id="nav">
+            <a href="index.html">
+                <div>TimeTable</div>
+            </a>
+            <a href="AP.html">
+                <div>Android Programing</div>
+            </a>
+            <a href="AP-L.html">
+                <div>Android Programing (lab)</div>
+            </a>
+            <a href="IS.html">
+                <div>Information Security</div>
+            </a>
+            <a href="DM.html">
+                <div>Digital Marketing</div>
+            </a>
+            <a href="DM-L.html">
+                <div>Digital Marketing (lab)</div>
+            </a>
+            <a href="CLIPR.html">
+                <div>Cyber Law & IPR</div>
+            </a>
+            <a href="CLIPR-L.html">
+                <div>Cyber Law & IPR (lab)</div>
+            </a>
+        </div>
+        <div class="body" id="body">
+            <div class="sub-body" id="sub-body">
+                <table>
+                    <tr>
+                        <td class="serial">Sno.</td>
+                        <td class="data" style="background-color: black; color: white; text-align: center;">Detailed contents</td>
+                    </tr>
+                    <tr>
+                        <td class="serial">1.</td>
+                        <td class="data">Study of System threat attacks - Denial of Services.</td>
+                    </tr>
+                    <tr>
+                        <td class="serial">2.</td>
+                        <td class="data">Study of Sniffing and Spoofing attacks.</td>
+                    </tr>
+                    <tr>
+                        <td class="serial">3.</td>
+                        <td class="data">Study of Techniques uses for Web Based Password Capturing.</td>
+                    </tr>
+                    <tr>
+                        <td class="serial">4.</td>
+                        <td class="data">Study of Different attacks causes by Virus and Trojans.</td>
+                    </tr>
+                    <tr>
+                        <td class="serial">5.</td>
+                        <td class="data">Study of Anti-Intrusion Technique – Honey pot.</td>
+                    </tr>
+                    <tr>
+                        <td class="serial">6.</td>
+                        <td class="data">Study of Symmetric Encryption Scheme – RC4.</td>
+                    </tr>
+                    <tr>
+                        <td class="serial">7.</td>
+                        <td class="data">Implementation of S-DES algorithm for data encryption</td>
+                    </tr>
+                    <tr>
+                        <td class="serial">8.</td>
+                        <td class="data">Implementation of Asymmetric Encryption Scheme – RSA.</td>
+                    </tr>
+                    <tr>
+                        <td class="serial">9.</td>
+                        <td class="data">Study of IP based Authentication.</td>
+                    </tr>
+                    <tr>
+                        <td class="serial">10.</td>
+                        <td class="data">Study of Cryptography Techniques.</td>
+                    </tr>
+                    <tr>
+                        <td class="serial">11.</td>
+                        <td class="data">Study of Encryption algorithms.</td>
+                    </tr>
+                    <tr>
+                        <td class="serial">12.</td>
+                        <td class="data">Study of Security polices.</td>
+                    </tr>
+                    <tr>
+                        <td class="serial">13.</td>
+                        <td class="data">Study of Network Security Fundamentals, Ethical Hacking and Social Engineering.</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script>
+        function menu(){
+            document.getElementById('btn').classList.toggle("change");
+        }
+    </script>
+</body>
+</html>
